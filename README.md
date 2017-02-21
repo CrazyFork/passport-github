@@ -1,3 +1,7 @@
+# 所有笔记在notes目录下
+
+
+
 # Passport-GitHub2
 
 The author of Passport-Github has not maintained the original module for a long time. Features in his module don't work since Github upgraded their API to version 3.0.  We forked it and re-published it to NPM with a new name `passport-github2`.

@@ -1,0 +1,9 @@
+this project is quite simple, inherit `passport-oauth2` strategy, and implements its contract.
+* a proper constructor
+* a userProfile method, that's it.
+
+
+
+
+notes:
+* the way of makefile been composed in this project.

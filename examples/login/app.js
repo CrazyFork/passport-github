@@ -8,8 +8,8 @@ var GitHubStrategy = require('passport-github2').Strategy;
 var partials = require('express-partials');
 
 
-var GITHUB_CLIENT_ID = "--insert-github-client-id-here--";
-var GITHUB_CLIENT_SECRET = "--insert-github-client-secret-here--";
+var GITHUB_CLIENT_ID = "07931ddf85ebe53a24de";
+var GITHUB_CLIENT_SECRET = "04c87a30b4e129cbb82f11af009eea6019c6c21e";
 
 
 // Passport session setup.
@@ -35,7 +35,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new GitHubStrategy({
     clientID: GITHUB_CLIENT_ID,
     clientSecret: GITHUB_CLIENT_SECRET,
-    callbackURL: "http://127.0.0.1:3000/auth/github/callback"
+    callbackURL: "http://127.0.0.1:9000/auth/github/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     // asynchronous verification, for effect...
@@ -110,7 +110,7 @@ app.get('/logout', function(req, res){
   res.redirect('/');
 });
 
-app.listen(3000);
+app.listen(9000);
 
 
 // Simple route middleware to ensure user is authenticated.
